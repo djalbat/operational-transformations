@@ -10,10 +10,8 @@ Type Operation
 
 Type Transformation
 
-Constructor i(NaturalNumber,String):Operation
+Constructor insert(NaturalNumber,String):Operation
 
-Constructor d(NaturalNumber,NaturalNumber):Operation
+Constructor delete(NaturalNumber,NaturalNumber):Operation
 
-Constructor e():Operation
-
-
+Constructor empty():Operation
