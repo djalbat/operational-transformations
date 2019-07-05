@@ -1,0 +1,19 @@
+Type String
+
+Type Character:String
+
+Constructors a:Character,b:Character,c:Character
+
+Type NaturalNumber
+
+Type Operation
+
+Type Transformation
+
+Constructor i(NaturalNumber,String):Operation
+
+Constructor d(NaturalNumber,NaturalNumber):Operation
+
+Constructor e():Operation
+
+
