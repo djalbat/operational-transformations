@@ -6,12 +6,12 @@
 
                               |  "insert"<NO_WHITESPACE>twoParenthesisedTerms 
 
-                              |  "empty"<NO_WHITESPACE>emptyParenthesis 
+                              |  "empty"<NO_WHITESPACE>emptyParentheses 
 
                               ;
 
      twoParenthesisedTerms  ::=  "(" term "," term ")" ;
 
-     emptyParenthesis       ::=  "("<NO_WHITESPACE>")" ;
+     emptyParentheses       ::=  "("<NO_WHITESPACE>")" ;
                                             
                                             
