@@ -1,17 +1,19 @@
 Type String
 
-Type Character:String
-
-Constructors a:Character,b:Character,c:Character
+Type Operation
 
 Type NaturalNumber
 
-Type Operation
-
-Type Transformation
-
-Constructor insert(NaturalNumber,String):Operation
-
-Constructor delete(NaturalNumber,NaturalNumber):Operation
+Variable s:String
+Variables n:NaturalNumber,l:NaturalNumber
 
 Constructor empty():Operation
+Constructor insert(NaturalNumber, String):Operation
+Constructor delete(NaturalNumber, NaturalNumber):Operation
+
+Constructor empty()(String):String
+Constructor insert(n, s)(String):String
+Constructor delete(n, l)(String):String
+
+Axiom
+  empty()(s)=s
