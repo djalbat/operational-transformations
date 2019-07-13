@@ -15,5 +15,5 @@ Constructor empty()(String):String
 Constructor insert(n, s)(String):String
 Constructor delete(n, l)(String):String
 
-Axiom
+Axiom (TheEmptyOperationDoesNothing)
   empty()(s)=s
