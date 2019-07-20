@@ -1,17 +1,3 @@
-Type String
-
-Type Operation
-
-Type NaturalNumber
-
 Constructor insert(NaturalNumber,String):Operation
-
-Constructor delete(NaturalNumber,NaturalNumber):Operation
-
-Constructor empty():Operation
-
-Variable s:String
-
-Variables n:NaturalNumber,l:NaturalNumber
 
 Constructor insert(s,l)(String):String

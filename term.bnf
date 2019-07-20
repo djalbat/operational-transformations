@@ -1,6 +1,6 @@
 
 
-                       term ::=  operation 
+                       term ::=  operation
 
                               |  operator
 
