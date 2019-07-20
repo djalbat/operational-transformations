@@ -4,16 +4,14 @@ Type Operation
 
 Type NaturalNumber
 
-Variable s:String
-Variables n:NaturalNumber,l:NaturalNumber
+Constructor insert(NaturalNumber,String):Operation
+
+Constructor delete(NaturalNumber,NaturalNumber):Operation
 
 Constructor empty():Operation
-Constructor insert(NaturalNumber, String):Operation
-Constructor delete(NaturalNumber, NaturalNumber):Operation
 
-Constructor empty()(String):String
-Constructor insert(n, s)(String):String
-Constructor delete(n, l)(String):String
+Variable s:String
 
-Axiom (TheEmptyOperationDoesNothing)
-  empty()(s)=s
+Variables n:NaturalNumber,l:NaturalNumber
+
+Constructor insert(s,l)(String):String
