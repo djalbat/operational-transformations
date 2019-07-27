@@ -1,3 +1,14 @@
-Constructor insert(NaturalNumber,String):Operation
+Type String
+Type Operator
+Type NaturalNumber
 
-Constructor insert(s,l)(String):String
+Variable s:String
+Variables n:NaturalNumber,l:NaturalNumber
+
+Constructor insert(NaturalNumber,String):Operator
+Constructor delete(NaturalNumber,NaturalNumber):Operator
+Constructor empty():Operator
+
+Constructor insert(n,s)(String):String
+Constructor delete(n,l)(String):String
+Constructor empty()(String):String

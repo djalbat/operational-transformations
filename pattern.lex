@@ -1,1 +1,1 @@
-insert|delete|empty
+zero|insert|delete|empty

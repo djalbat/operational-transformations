@@ -1,26 +1,25 @@
 
+                       term  ::=  operation
 
-                       term ::=  operation
+                               |  operator
 
-                              |  operator
-
-                              ;
-
-
-                  operation ::=  operator<NO_WHITESPACE>oneParenthesisedTerm ;
+                               ;
 
 
-                   operator ::=  "insert"<NO_WHITESPACE>twoParenthesisedTerms
-
-                              |  "delete"<NO_WHITESPACE>twoParenthesisedTerms
-
-                              |  "empty"<NO_WHITESPACE>emptyParentheses
-
-                              ;
+                  operation  ::=  operator<NO_WHITESPACE>oneParenthesisedTerm ;
 
 
-      twoParenthesisedTerms ::=  "(" term "," term ")" ;
+                   operator  ::=  "insert"<NO_WHITESPACE>twoParenthesisedTerms 
 
-       oneParenthesisedTerm ::=  "(" term ")" ;
+                               |  "delete"<NO_WHITESPACE>twoParenthesisedTerms 
 
-           emptyParentheses ::=  "("<NO_WHITESPACE>")" ;
+                               |  "empty"<NO_WHITESPACE>emptyParentheses 
+
+                               ;
+
+
+      twoParenthesisedTerms  ::=  "(" term "," term ")" ;
+
+       oneParenthesisedTerm  ::=  "(" term ")" ;
+
+           emptyParentheses  ::=  "("<NO_WHITESPACE>")" ;
