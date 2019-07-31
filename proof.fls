@@ -2,9 +2,11 @@ Type String
 Type Operator
 Type NaturalNumber
 
-Variable s:String
+Variables s:String, s':String
 
 Variables n:NaturalNumber, l:NaturalNumber
+
+Constructor |String|:NaturalNumber
 
 Constructor String[...NaturalNumber]:String
 Constructor String[NaturalNumber...NaturalNumber]:String
@@ -18,8 +20,17 @@ Constructor insert(n,s)(String):String
 Constructor delete(n,l)(String):String
 Constructor empty()(String):String
 
+Axiom (InsertOperation)
+  Suppose
+    n <= |s|
+  Hence
+    insert(n,s')(s) = s[...n] + s' + s[n...]
+
 Axiom (DeleteOperation)
-  delete(n,l)(s) = s[...n+l]
+  Suppose
+    n + l <= |s|
+  Hence
+    delete(n,l)(s) = s[...n] + s[n+l...]
 
 Axiom (EmptyOperation)
   empty()(s)=s

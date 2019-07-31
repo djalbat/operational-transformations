@@ -1,1 +1,1 @@
-\[|\]|\.\.\.|\+|\-|insert|delete|empty
+\||<=|>=|<|>|\[|\]|\.\.\.|\+|\-|insert|delete|empty

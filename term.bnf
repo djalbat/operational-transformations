@@ -6,6 +6,8 @@
 
                                |  substring
 
+                               |  stringLength
+
                                ;
 
 
@@ -28,6 +30,9 @@
                                |  name<NO_WHITESPACE>"[" expression "..."  "]" 
 
                                ;
+
+
+               stringLength  ::=  "|" term "|" ;
 
 
       twoParenthesisedTerms  ::=  "(" term "," term ")" ;
