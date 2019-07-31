@@ -3,7 +3,12 @@ Type Operator
 Type NaturalNumber
 
 Variable s:String
-Variables n:NaturalNumber,l:NaturalNumber
+
+Variables n:NaturalNumber, l:NaturalNumber
+
+Constructor String[...NaturalNumber]:String
+Constructor String[NaturalNumber...NaturalNumber]:String
+Constructor String[NaturalNumber...]:String
 
 Constructor insert(NaturalNumber,String):Operator
 Constructor delete(NaturalNumber,NaturalNumber):Operator
@@ -14,7 +19,7 @@ Constructor delete(n,l)(String):String
 Constructor empty()(String):String
 
 Axiom (DeleteOperation)
-  delete(n,l)(s) = s + s
+  delete(n,l)(s) = s + s[...n+s]
 
 Axiom (EmptyOperation)
   empty()(s)=s

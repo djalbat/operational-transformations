@@ -4,6 +4,8 @@
 
                                |  operator
 
+                               |  substring
+
                                ;
 
 
@@ -15,6 +17,15 @@
                                |  "delete"<NO_WHITESPACE>twoParenthesisedTerms 
 
                                |  "empty"<NO_WHITESPACE>emptyParentheses 
+
+                               ;
+
+
+                  substring  ::=  name<NO_WHITESPACE>"[" "..." expression "]" 
+
+                               |  name<NO_WHITESPACE>"[" expression "..." expression "]" 
+
+                               |  name<NO_WHITESPACE>"[" expression "..."  "]" 
 
                                ;
 
