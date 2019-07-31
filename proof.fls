@@ -19,7 +19,7 @@ Constructor delete(n,l)(String):String
 Constructor empty()(String):String
 
 Axiom (DeleteOperation)
-  delete(n,l)(s) = s + s[...n+s]
+  delete(n,l)(s) = s[...n+l]
 
 Axiom (EmptyOperation)
   empty()(s)=s
