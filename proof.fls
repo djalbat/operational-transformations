@@ -33,4 +33,4 @@ Axiom (DeleteOperation)
     delete(n,l)(s) = s[...n] + s[n+l...]
 
 Axiom (EmptyOperation)
-  empty()(s)=s
+  empty()(s) = s
