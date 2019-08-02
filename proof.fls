@@ -1,6 +1,5 @@
 Type String
 Type Operator
-Type NaturalNumber
 
 Variables s:String, s':String
 

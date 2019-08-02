@@ -11,14 +11,14 @@
                                ;
 
 
-                  operation  ::=  operator<NO_WHITESPACE>oneParenthesisedTerm ;
+                  operation  ::=  operator<NO_WHITESPACE>"(" term ")" ;
 
 
-                   operator  ::=  "insert"<NO_WHITESPACE>twoParenthesisedTerms 
+                   operator  ::=  "insert"<NO_WHITESPACE>"(" term "," term ")"
 
-                               |  "delete"<NO_WHITESPACE>twoParenthesisedTerms 
+                               |  "delete"<NO_WHITESPACE>"(" term "," term ")" 
 
-                               |  "empty"<NO_WHITESPACE>emptyParentheses 
+                               |  "empty"<NO_WHITESPACE>"("<NO_WHITESPACE>")"
 
                                ;
 
@@ -35,8 +35,3 @@
                stringLength  ::=  "|" term "|" ;
 
 
-      twoParenthesisedTerms  ::=  "(" term "," term ")" ;
-
-       oneParenthesisedTerm  ::=  "(" term ")" ;
-
-           emptyParentheses  ::=  "("<NO_WHITESPACE>")" ;
