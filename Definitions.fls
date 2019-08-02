@@ -1,23 +1,17 @@
-Type String
 Type Operator
-
-Variables s:String, s':String
-
-Variables n:NaturalNumber, l:NaturalNumber
-
-Constructor |String|:NaturalNumber
-
-Constructor String[...NaturalNumber]:String
-Constructor String[NaturalNumber...NaturalNumber]:String
-Constructor String[NaturalNumber...]:String
 
 Constructor insert(NaturalNumber,String):Operator
 Constructor delete(NaturalNumber,NaturalNumber):Operator
 Constructor empty():Operator
 
+Variable s:String
+Variables n:NaturalNumber, l:NaturalNumber
+
 Constructor insert(n,s)(String):String
 Constructor delete(n,l)(String):String
 Constructor empty()(String):String
+
+Variable s':String
 
 Axiom (InsertOperation)
   Suppose

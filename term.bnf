@@ -4,10 +4,6 @@
 
                                |  operator
 
-                               |  substring
-
-                               |  stringLength
-
                                ;
 
 
@@ -21,17 +17,3 @@
                                |  "empty"<NO_WHITESPACE>"("<NO_WHITESPACE>")"
 
                                ;
-
-
-                  substring  ::=  name<NO_WHITESPACE>"[" "..." expression "]" 
-
-                               |  name<NO_WHITESPACE>"[" expression "..." expression "]" 
-
-                               |  name<NO_WHITESPACE>"[" expression "..."  "]" 
-
-                               ;
-
-
-               stringLength  ::=  "|" term "|" ;
-
-
