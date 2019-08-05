@@ -1,23 +1,21 @@
 Type Operator
 
+Variables s:String, t:String
+Variables n:NaturalNumber, l:NaturalNumber
+
 Constructor insert(NaturalNumber,String):Operator
 Constructor delete(NaturalNumber,NaturalNumber):Operator
 Constructor empty():Operator
 
-Variable s:String
-Variables n:NaturalNumber, l:NaturalNumber
-
-Constructor insert(n,s)(String):String
+Constructor insert(n,t)(String):String
 Constructor delete(n,l)(String):String
 Constructor empty()(String):String
-
-Variable s':String
 
 Axiom (InsertOperation)
   Suppose
     n <= |s|
   Hence
-    insert(n,s')(s) = s[...n] + s' + s[n...]
+    insert(n,t)(s) = s[...n] + t + s[n...]
 
 Axiom (DeleteOperation)
   Suppose
