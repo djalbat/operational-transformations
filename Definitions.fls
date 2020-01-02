@@ -1,7 +1,7 @@
 Type Operator
 
-Variables s:String, t:String
-Variables n:NaturalNumber, l:NaturalNumber
+Variables t,s:String
+Variables n,l:NaturalNumber
 
 Constructor insert(NaturalNumber,String):Operator
 Constructor delete(NaturalNumber,NaturalNumber):Operator
@@ -10,7 +10,7 @@ Constructor empty():Operator
 Constructor insert(n,t)(String):String
 Constructor delete(n,l)(String):String
 Constructor empty()(String):String
-
+ 
 Axiom (InsertOperation)
   Suppose
     n <= |s|
@@ -21,7 +21,7 @@ Axiom (DeleteOperation)
   Suppose
     n + l <= |s|
   Hence
-    delete(n,l)(s) = s[...n] + s[n+l...]
+    delete(n,l)(s) = s[...n] + s[n + l...]
 
 Axiom (EmptyOperation)
   empty()(s) = s
