@@ -1,17 +1,3 @@
 
 
-                 expression  ::=  arithmeticExpression
-
-                               ;
-
-
-       arithmeticExpression  ::=  addition 
-
-                               |  subtraction 
-
-                               ;
-
-
-                   addition  ::=  expression "+" expression ;
-
-                subtraction  ::=  expression "-" expression ;
+                 expression  ::=  expression ( "+" | "-" ) expression ;

@@ -1,21 +1,3 @@
 
 
-                  statement  ::=  lessThan
-
-                               |  greaterThan
-
-                               |  lessThanOrEqualTo
-
-                               |  greaterThanOrEqualTo
-
-                               ;
-
-
-
-                   lessThan  ::=  expression "<" expression ;
-
-                greaterThan  ::=  expression ">" expression ;
-
-          lessThanOrEqualTo  ::=  expression "<=" expression ;
-
-       greaterThanOrEqualTo  ::=  expression ">=" expression ;
+                  statement  ::=  expression ( "<" | ">" | "<=" | ">=" ) expression ;
