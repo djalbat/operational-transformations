@@ -10,13 +10,13 @@ Constructor empty():Operator
 Constructor insert(n,t)(String):String
 Constructor delete(n,l)(String):String
 Constructor empty()(String):String
- 
+
 Axiom (InsertOperation)
   Suppose
     n <= |s|
   Hence
     insert(n,t)(s) = s[...n] + t + s[n...]
-
+###
 Axiom (DeleteOperation)
   Suppose
     n + l <= |s|
