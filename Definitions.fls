@@ -13,7 +13,7 @@ Constructor empty()(String):String
 
 Axiom (InsertOperation)
   Suppose
-    n <= |s|
+    n <= s
   Hence
     insert(n,t)(s) = s[...n] + t + s[n...]
 ###
