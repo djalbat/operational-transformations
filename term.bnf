@@ -1,13 +1,13 @@
 
 
-                       term  ::=  operator<NO_WHITESPACE>"(" term ")"
+                       term  ::=  operation<NO_WHITESPACE>"(" term ")"
 
-                               |  operator
+                               |  operation
 
                                ;
 
 
-                   operator  ::=  "insert"<NO_WHITESPACE>"(" term "," term ")"
+                  operation  ::=  "insert"<NO_WHITESPACE>"(" term "," term ")"
 
                                |  "delete"<NO_WHITESPACE>"(" term "," term ")" 
 

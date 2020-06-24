@@ -1,11 +1,11 @@
-Type Operator
+Type Operation
 
 Variables t,s:String
 Variables n,l:NaturalNumber
 
-Constructor insert(NaturalNumber,String):Operator
-Constructor delete(NaturalNumber,NaturalNumber):Operator
-Constructor empty():Operator
+Constructor insert(NaturalNumber,String):Operation
+Constructor delete(NaturalNumber,NaturalNumber):Operation
+Constructor empty():Operation
 
 Constructor insert(n,t)(String):String
 Constructor delete(n,l)(String):String
