@@ -1,9 +1,6 @@
 {
   "repository": "https://github.com/jecs-imperial/operational-transformations",
   "dependencies": [
-     "strings",
-     "arithmetic",
-     "natural-numbers",
-     "minimal-propositional-logic"
+     "strings"
   ]
 }

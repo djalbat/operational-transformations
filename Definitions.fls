@@ -1,15 +1,14 @@
-Type Operation
-
 Variables t,s:String
 Variables n,l:NaturalNumber
 
-Constructor insert(NaturalNumber,String):Operation
-Constructor delete(NaturalNumber,NaturalNumber):Operation
-Constructor empty():Operation
-
-Constructor insert(n,t)(String):String
-Constructor delete(n,l)(String):String
+Constructor empty()
 Constructor empty()(String):String
+
+Constructor delete(NaturalNumber,NaturalNumber)
+Constructor delete(n,l)(String):String
+
+Constructor insert(NaturalNumber, String)
+Constructor insert(n,s)(String):String
 
 Axiom (InsertOperation)
   Suppose
@@ -25,3 +24,4 @@ Axiom (DeleteOperation)
 
 Axiom (EmptyOperation)
   empty()(s) = s
+###
