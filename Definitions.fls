@@ -8,20 +8,4 @@ Constructor delete(NaturalNumber,NaturalNumber)
 Constructor delete(n,l)(String):String
 
 Constructor insert(NaturalNumber, String)
-Constructor insert(n,s)(String):String
-
-Axiom (InsertOperation)
-  Suppose
-    n <= s
-  Hence
-    insert(n,t)(s) = s[...n] + t + s[n...]
-###
-Axiom (DeleteOperation)
-  Suppose
-    n + l <= |s|
-  Hence
-    delete(n,l)(s) = s[...n] + s[n + l...]
-
-Axiom (EmptyOperation)
-  empty()(s) = s
-###
+Constructor insert(n,t)(String):String
