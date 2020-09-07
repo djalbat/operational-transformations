@@ -9,3 +9,18 @@ Constructor delete(n,l)(String):String
 
 Constructor insert(NaturalNumber, String)
 Constructor insert(n,t)(String):String
+
+Axiom (InsertOperation)
+  Suppose
+    (n + l) <= |s|
+  Hence
+    insert(n,t)(s) = s[...n] + t + s[n...]
+
+Axiom (DeleteOperation)
+  Suppose
+    (n + l) <= |s|
+  Hence
+    delete(n,l)(s) = s[...n] + s[n + l...]
+
+Axiom (EmptyOperation)
+  empty()(s) = s
