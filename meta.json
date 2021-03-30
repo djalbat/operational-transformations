@@ -1,5 +1,5 @@
 {
-  "repository": "https://github.com/jecs-imperial/operational-transformations",
+  "repository": "https://github.com/djalbat/operational-transformations",
   "dependencies": [
      "strings"
   ]
