@@ -1,14 +1,21 @@
 
 
-                       term  ::=  operation ( <NO_WHITESPACE>"(" expression ")" )?
+                stringTerm  ::=  operation  
 
-                               ;
+                              |  operator
+
+                              ;
+
+ 
+
+                 operation  ::=  operator<NO_WHITESPACE>"(" stringExpression ")" ;
 
 
-                  operation  ::=  "insert"<NO_WHITESPACE>"(" expression "," expression ")"
 
-                               |  "delete"<NO_WHITESPACE>"(" expression "," expression ")" 
+                  operator  ::=  "insert"<NO_WHITESPACE>"(" naturalNumber "," stringExpression ")"
 
-                               |  "empty"<NO_WHITESPACE>"("<NO_WHITESPACE>")"
+                              |  "delete"<NO_WHITESPACE>"(" naturalNumber "," naturalNumber ")" 
 
-                               ;
+                              |  "empty"<NO_WHITESPACE>"("<NO_WHITESPACE>")"
+
+                              ;

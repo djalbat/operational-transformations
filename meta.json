@@ -1,6 +1,7 @@
 {
   "repository": "https://github.com/djalbat/operational-transformations",
   "dependencies": [
-     "strings"
+     "strings",
+     "natural-numbers"
   ]
 }
