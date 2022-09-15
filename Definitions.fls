@@ -1,5 +1,8 @@
-Variables t,s:String
-Variables n,l:NaturalNumber
+Variable t:String
+Variable s:String
+
+Variable n:NaturalNumber
+Variable l:NaturalNumber
 
 Constructor empty()
 Constructor empty()(String):String

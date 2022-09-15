@@ -8,13 +8,13 @@
 
  
 
-                 operation  ::=  operator<NO_WHITESPACE>"(" stringExpression ")" ;
+                 operation  ::=  argument<NO_WHITESPACE>"(" argument ")" ;
 
 
 
-                  operator  ::=  "insert"<NO_WHITESPACE>"(" naturalNumber "," stringExpression ")"
+                  operator  ::=  "insert"<NO_WHITESPACE>"(" argument "," argument ")"
 
-                              |  "delete"<NO_WHITESPACE>"(" naturalNumber "," naturalNumber ")" 
+                              |  "delete"<NO_WHITESPACE>"(" argument "," argument ")" 
 
                               |  "empty"<NO_WHITESPACE>"("<NO_WHITESPACE>")"
 
