@@ -1,21 +1,17 @@
 
 
-                stringTerm  ::=  operation  
+                      term  ::=  argument<NO_WHITESPACE>"(" argument ")"
 
-                              |  operator
+                              |  operation 
 
                               ;
 
- 
 
-                 operation  ::=  argument<NO_WHITESPACE>"(" argument ")" ;
+                 operation  ::=  "empty"<NO_WHITESPACE>"("<NO_WHITESPACE>")"
 
-
-
-                  operator  ::=  "insert"<NO_WHITESPACE>"(" argument "," argument ")"
+                              |  "insert"<NO_WHITESPACE>"(" argument "," argument ")"
 
                               |  "delete"<NO_WHITESPACE>"(" argument "," argument ")" 
 
-                              |  "empty"<NO_WHITESPACE>"("<NO_WHITESPACE>")"
-
                               ;
+

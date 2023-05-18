@@ -2,7 +2,7 @@
   "version": "0.0.0",
   "repository": "https://github.com/djalbat/operational-transformations",
   "dependencies": {
-    "arithmetic": "0.0",
-    "strings": "0.0"
+    "arithmetic": "4.0",
+    "strings": "3.0"
   }
 }

@@ -7,23 +7,23 @@ Variable l:NaturalNumber
 Constructor empty()
 Constructor empty()(String):String
 
+Constructor insert(NaturalNumber, String)
+Constructor insert(n,t)(String):String
+
 Constructor delete(NaturalNumber,NaturalNumber)
 Constructor delete(n,l)(String):String
 
-Constructor insert(NaturalNumber, String)
-Constructor insert(n,t)(String):String
+Axiom (EmptyOperation)
+  empty()(s) = s
 
 Axiom (InsertOperation)
   Suppose
     (n + l) <= |s|
-  Hence
+  Then
     insert(n,t)(s) = s[...n] + t + s[n...]
 
 Axiom (DeleteOperation)
   Suppose
     (n + l) <= |s|
-  Hence
-    delete(n,l)(s) = s[...n] + s[n + l...]
-
-Axiom (EmptyOperation)
-  empty()(s) = s
+  Then
+    delete(n,l)(s) = s[...n] + s[(n + l)...]
