@@ -3,6 +3,6 @@
   "repository": "https://github.com/djalbat/operational-transformations",
   "dependencies": {
     "arithmetic": "6.0",
-    "strings": "6.0"
+    "strings": "7.0"
   }
 }
