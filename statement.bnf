@@ -1,0 +1,8 @@
+
+
+                         statement  ::=  argument ( "<" | "⩽" | "⩾" | ">" ) argument
+
+                                      |  argument "≠" argument 
+
+                                      ;
+
