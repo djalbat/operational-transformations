@@ -1,11 +1,11 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.0",
   "repository": "https://github.com/djalbat/operational-transformations",
   "dependencies": {
-    "arithmetic": "4.0",
-    "numbers": "5.0",
-    "strings": "2.0",
-    "equality": "2.0",
+    "arithmetic": "0.0",
+    "numbers": "0.0",
+    "strings": "0.0",
+    "equality": "0.0",
     "inequality": "0.0"
   }
 }
