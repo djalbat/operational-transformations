@@ -1,0 +1,6 @@
+Variable s:String
+Variable τ:Operation
+Variable ρ:Operation
+
+Conjecture (Consistency)
+  τ;(ρ\τ) = ρ;(τ\ρ)

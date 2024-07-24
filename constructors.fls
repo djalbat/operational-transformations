@@ -1,14 +1,4 @@
-Variable t:String
-Variable s:String
+Constructor Operation\Operation:Operation
+Constructor (Operation):Operation
 
-Variable n:ℕ
-Variable l:ℕ
-
-Constructor empty()
-Constructor empty()(String):String
-
-Constructor insert(ℕ, String)
-Constructor insert(n,t)(String):String
-
-Constructor delete(ℕ,ℕ)
-Constructor delete(n,l)(String):String
+Constructor Operation;Operation:Operations

@@ -1,19 +1,11 @@
 
 
-                      term  ::=  argument<NO_WHITESPACE>"(" argument ")"
-
-                              |  "(" argument ")"
-
-                              |  operation 
-
-                              ;
+                      term  ::=  operations ;
 
 
-                 operation  ::=  "empty"<NO_WHITESPACE>"("<NO_WHITESPACE>")"
+                operations  ::=  argument ( ";" argument )+ ;
 
-                              |  "insert"<NO_WHITESPACE>"(" argument "," argument ")"
 
-                              |  "delete"<NO_WHITESPACE>"(" argument "," argument ")" 
+                 operation  ::=  argument "\\" argument ;
 
-                              ;
 
