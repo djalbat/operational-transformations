@@ -1,11 +1,8 @@
 
 
-                      term  ::=  operations ;
+                      term  ::=  argument ( ";" argument )+ 
 
+                              |  argument "\\" argument 
 
-                operations  ::=  argument ( ";" argument )+ ;
-
-
-                 operation  ::=  argument "\\" argument ;
-
+                              ;
 

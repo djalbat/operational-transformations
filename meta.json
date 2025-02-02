@@ -1,7 +1,7 @@
 {
-  "version": "0.0.2",
+  "version": "1.0.0",
   "repository": "https://github.com/djalbat/operational-transformations",
   "dependencies": {
-    "operations": "2.0"
+    "operations": "3.0"
   }
 }
