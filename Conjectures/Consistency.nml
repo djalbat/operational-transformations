@@ -1,6 +1,6 @@
-Variable s:String
-Variable τ:Operation
-Variable ρ:Operation
+Variable s:𝗦𝘁𝗿𝗶𝗻𝗴
+Variable t:𝗢𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻
+Variable r:𝗢𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻
 
 Conjecture (Consistency)
-  τ;(ρ\τ) = ρ;(τ\ρ)
+  t;(r\t) = r;(t\r)
