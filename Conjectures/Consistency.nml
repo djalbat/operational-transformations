@@ -1,6 +1,6 @@
-Variable s:𝗦𝘁𝗿𝗶𝗻𝗴
-Variable t:𝗢𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻
-Variable r:𝗢𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻
+Variable s:𝖲𝗍𝗋𝗂𝗇𝗀
+Variable t:𝖮𝗉𝖾𝗋𝖺𝗍𝗂𝗈𝗇
+Variable r:𝖮𝗉𝖾𝗋𝖺𝗍𝗂𝗈𝗇
 
 Conjecture (Consistency)
   t;(r\t) = r;(t\r)
